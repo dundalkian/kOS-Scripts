@@ -11,6 +11,8 @@ function recordInput {
         print userInput:join("") at (0,35).
     }
     print "enter".
+    //When enter works properly, have the recordInput function return the string
+    //version of the list that was formed. This then used for command/navigation
 
 }
 
