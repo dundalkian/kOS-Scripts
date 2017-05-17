@@ -1,5 +1,3 @@
-clearscreen.
-
 run launchSites.
 function launchOptions{
     if (launchSite() = 0){
@@ -12,7 +10,7 @@ function launchOptions{
         print "Launching from KSC Launch Pad 1A".
     }
 }
-launchOptions().
+
 
 lock throttle to 1.0.
 print "Booster Ignition in 10".

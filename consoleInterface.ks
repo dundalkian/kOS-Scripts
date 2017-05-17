@@ -1,3 +1,4 @@
+run OrbitData.
 clearscreen.
 set xcurs to 0.
 set ycurs to 35.
@@ -10,7 +11,7 @@ set userInput to list().
 mainMenu().
 
 function cursor{
-    print "_" at (xcurs, ycurs).
+    print "*" at (xcurs, ycurs).
 }
 function upArrow{
     mainMenu().
@@ -144,12 +145,16 @@ function nextChar {
     return terminal:input:getchar.
 }
 
-// set done to false.
-// on AG10 set done to true.
-//
-// until done {
-//     keyListener().
-// }
-// if done {
-//     clearscreen.
-// }
+set done to false.
+on AG10 set done to true.
+
+until done {
+    command = keyListener().
+    if (command = "orbit"){
+        set orbit to list(100000, 100000, 0)
+        transferData(orbit)
+    }
+}
+if done {
+    clearscreen.
+}
