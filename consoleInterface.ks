@@ -149,10 +149,10 @@ set done to false.
 on AG10 set done to true.
 
 until done {
-    command = keyListener().
+    set command to keyListener().
     if (command = "orbit"){
-        set orbit to list(100000, 100000, 0)
-        transferData(orbit)
+        set desiredorbit to list(100000, 100000, 0).
+        transferData(desiredorbit).
     }
 }
 if done {
