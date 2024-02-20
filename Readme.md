@@ -33,17 +33,17 @@ $$m_p = m_0 \left( 1 - e\frac{-\Delta V}{I_{sp}g_o}\right)$$
 
 Knowing the mass of our propellant, we now need the rate of mass flow to give us the total burn time: $\frac{kg}{kg/s} = s$
 
-Mass flow rate means mass changes with respect to time. $F = m*a $ can't save us so easily.
+Mass flow rate means mass changes with respect to time. $F = m*a$ can't save us so easily.
 
 ... Skipping some very important steps (https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/thrust-force/) ... We generally can relate these equations:
 
 $$F = ma = m \dot v = \dot m v_{exhaust} = F_{thrust}$$
 
-$$ \dot m = \frac{F_{thrust}}{v_{exhaust}}$$
+$$\dot m = \frac{F_{thrust}}{v_{exhaust}}$$
 
 and with $v_{exhaust} = I_{sp}g_0$ from the rocket equation this starts to look manageable:
 
-$$ \dot m = \frac{F_{thrust}}{I_{sp}g_0}$$
+$$\dot m = \frac{F_{thrust}}{I_{sp}g_0}$$
 ---
 ### Finding burn time
 
